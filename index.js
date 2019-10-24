@@ -8,7 +8,7 @@ nextISSTimesForMyLocation((err, times) => {
   times.forEach(({risetime, duration}) => {
     const time = new Date(0);
     time.setUTCSeconds(risetime);
-    console.log(`Next pass at ${time} for ${duration} seconds!`)
+    console.log(`Next pass at ${time} for ${duration} seconds!`);
   });
 
 });
